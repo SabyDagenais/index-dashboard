@@ -42,7 +42,8 @@ indices = {
 st.title("📈 Global Market Index Dashboard")
 
 start_date = st.date_input("Start date", pd.to_datetime("2022-01-01"))
-end_date = st.date_input("End date", pd.to_datetime("2024-12-31"))
+end_date = st.date_input("End date", today)
+
 
 selected_names = st.multiselect("Select indices:", list(indices.values()), default=["S&P 500 (US)", "NASDAQ Composite (US)"])
 
