@@ -42,6 +42,7 @@ indices = {
 
 st.title("📈 Global Market Index Dashboard")
 
+today = date.today()
 start_date = st.date_input("Start date", pd.to_datetime("2022-01-01"))
 end_date = st.date_input("End date", today)
 
