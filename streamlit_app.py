@@ -38,6 +38,7 @@ indices = {
     "^SP500-45": "S&P 500 Energy (proxy)",
     "ESGU": "S&P 500 ESG ETF",
     "EEM": "MSCI Emerging Markets ETF",
+     "^VIX": "CBOE VOLATILITY (FEAR)",
 }
 
 st.title("📈 Global Market Index Dashboard")
