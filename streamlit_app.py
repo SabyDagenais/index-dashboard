@@ -48,7 +48,7 @@ start_date = st.date_input("Start date", pd.to_datetime("2022-01-01"))
 end_date = st.date_input("End date", today)
 
 
-selected_names = st.multiselect("Select indices:", list(indices.values()), default=["S&P 500 (US)", "NASDAQ Composite (US)"])
+selected_names = st.multiselect("Select indices:", list(indices.values()), default=["S&P 500 (US)","S&P/TSX Composite (Canada)", "CBOE VOLATILITY (FEAR)"])
 
 # Reverse lookup
 ticker_map = {v: k for k, v in indices.items()}
